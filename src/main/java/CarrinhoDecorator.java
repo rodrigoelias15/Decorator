@@ -10,14 +10,16 @@ public abstract class CarrinhoDecorator implements CategoriaProduto {
     public abstract float getValor();
 
     @Override
-    public float getValorFrete() {
-        return this.categoriaProduto.getValorFrete() + this.getValor();
+    public float getValorTotal() {
+        return this.categoriaProduto.getValorTotal() + this.getValor();
     }
 
     @Override
     public String getNome() {
-        return this.categoriaProduto.getNome();
+        return this.categoriaProduto.getNome() + "/" + getNomeProduto();
     }
+
+    public abstract String getNomeProduto();
 
     public CategoriaProduto getProduto() {
         return categoriaProduto;

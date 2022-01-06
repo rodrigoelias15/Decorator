@@ -1,18 +1,19 @@
 public class UtensiliosCasa implements CategoriaProduto {
 
-    public float valorFrete;
+    public float valorTotal;
 
-    public UtensiliosCasa(float valorFrete) {
-        this.valorFrete = valorFrete;
+    public UtensiliosCasa(float valorTotal) {
+        this.valorTotal = valorTotal;
     }
 
     @Override
-    public float getValorFrete() {
-        return 0;
+    public float getValorTotal() {
+        return valorTotal;
     }
 
     @Override
     public String getNome() {
         return "Utensílio de casa";
     }
+
 }

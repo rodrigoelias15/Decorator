@@ -6,7 +6,12 @@ public class Panela extends CarrinhoDecorator{
 
     @Override
     public float getValor() {
-        return 5.2f;
+        return 100.0f;
     }
+
+    @Override
+    public String getNomeProduto(){
+        return "Panela";
+    };
 
 }

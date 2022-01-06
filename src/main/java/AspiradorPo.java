@@ -6,7 +6,12 @@ public class AspiradorPo extends CarrinhoDecorator{
 
     @Override
     public float getValor() {
-        return 10.2f;
+        return 250.0f;
+    }
+
+    @Override
+    public String getNomeProduto() {
+        return "Aspirador de po";
     }
 
 }

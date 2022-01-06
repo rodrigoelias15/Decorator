@@ -1,5 +1,5 @@
 public interface CategoriaProduto {
 
-    float getValorFrete();
+    float getValorTotal();
     String getNome();
 }
